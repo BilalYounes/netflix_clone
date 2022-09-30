@@ -19,12 +19,14 @@
     "save-dev": "^0.0.1-security",
     "web-vitals": "^2.1.4"
   },
-  
+  "homepage": "https://bilalyounes.github.io/netflix_clone/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+"deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
