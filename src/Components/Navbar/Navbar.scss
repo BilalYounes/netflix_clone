@@ -1,0 +1,138 @@
+.navbar{
+    // padding: 2rem 0;
+    color: white;
+   font-size: 1.4rem;
+   width: 100%;
+   position: fixed;
+   top: 0;
+   z-index: 999;
+   background: linear-gradient(to top, transparent 0%, rgb(0, 0, 0, 0.3) 50%);
+   transition: all 1s;
+   backface-visibility: hidden;
+
+   &.scrolled{
+    background-color: var(--main-color);
+   }
+    &__continer{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem 5rem;
+        height: 7rem;
+     
+    }
+    &__left{
+        display: flex;
+        align-items: center;
+      
+
+    }
+    &__logobox{
+        height: 2.5rem ;
+       
+    }
+    &__logo{
+        transition: all .2s;
+        &:hover{
+            transform: scale(1.2);
+           } 
+        width: 100%;
+        height: 100%;
+    }
+    &__listItems{
+        margin-left: 2rem;
+        list-style: none;
+        
+        // display: inline-block;
+    }
+    &__item{
+        display: inline;
+        padding: 0 .5rem;
+        cursor: pointer;
+        transition: all .3s;
+        &:hover
+        {
+            color: red;
+            
+        }
+    }
+
+    &__right{
+        // backface-visibility: hidden;
+        // padding: 0 4rem;
+        display: flex;
+        align-items: center;
+        //  justify-content: center;
+
+    }
+    &__icon-noti{
+        position: relative;
+    }
+    &__badg{
+        height: 1.3rem;
+        width: 1.3rem;
+        border-radius: 50%;
+        background-color: var(--second-color);
+        position: absolute;
+        top:-.3rem;
+        right: 0rem;
+        color:white;
+        font-size: 1rem;
+        text-align: center;
+    }
+    .MuiSvgIcon-root{
+        display: flex;
+
+        align-items: center;
+        font-size: 2.5rem;
+    }
+   
+    .serach {
+        
+        display: flex;
+        align-items: center;
+        // margin-right: .5rem;
+        border: 2px solid gray;
+        border-radius: 100rem;
+        overflow: hidden;
+        padding: .5rem 1rem;
+        cursor: pointer;
+    }
+  
+    &__input{
+        font-size: 1.5rem;
+        font-family: inherit;
+        clor: white;
+        border: none;
+        padding: .4rem;
+        // border-radius: 100rem;
+        background-color: transparent  ;
+        &:focus {
+            outline: none;
+            box-shadow: 0 1rem 2rem rgba(black, .1);
+        }
+        &::placeholder{
+            color: white;
+            font-weight: 300;
+        }
+    }
+    &__imgbox{
+        height: 2.5rem;
+        width: 2.5rem;
+        // margin-left: 2rem;
+        cursor: pointer;
+    }
+    &__img{
+        width: 30px;
+        height: 30px;
+        border-radius: 5px;
+        object-fit: cover;
+        cursor: pointer;
+
+    }
+
+
+
+
+    
+}

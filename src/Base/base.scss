@@ -1,0 +1,30 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+*:link,
+*:visited{
+    text-decoration: none;
+    color: inherit;
+}
+html {
+    font-size: 62.5%;
+
+}
+
+body {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    
+}
+:root{
+    --main-color: #0b0b0b;
+    
+    --second-color: #CC0000;
+
+
+    // --shdow-color: 
+}

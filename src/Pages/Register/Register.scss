@@ -1,0 +1,106 @@
+.register {
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(to bottom,
+  rgba(0,0,0,0) 0%,
+  rgba(0,0,0,1) 100%
+  ), url("../../imgs/register.jpg");
+    position: relative;
+    background-size: cover;
+   
+  &__top{
+
+    .wrapper{
+    
+        padding: 2rem 5rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        img{
+            height: 4rem;
+        }
+        .signButton {
+          transition: all .1s;
+
+          border: none;
+          padding: .5rem 1.5rem;
+          background-color:var(--second-color);
+          font-size: 1.6rem;
+          color: white;
+          border-radius: 5px ;
+          cursor: pointer;
+         &:hover{
+          transform: translateY(-2px);
+        box-shadow: 0 1rem 2rem rgba(black,.2);
+         }
+         &:active,
+    &:focus {
+        outline: none;
+        transform: translateY(-1px);
+        box-shadow: 0 .5rem 1rem rgba(black,.2);
+    }
+          
+        }
+    }
+  }
+  .continer {
+    width: 100%;
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+   
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    color: white;
+
+    h1{
+        font-size: 3.5rem;
+    }
+    h2{
+        font-size: 2rem;
+        margin: 1rem;
+    }
+    p{
+        font-size: 2rem;
+    }
+    .input {
+        width: 50%;
+        background-color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 2rem;
+      height: 5rem;
+      border-radius: 5px;
+
+      input{
+        flex: 9;
+        border: none;
+        padding: 1rem 2rem;
+        height: 100%;
+        &:valid ,
+        &:focus{
+            outline: none;
+            // border-bottom: 4px solid green;
+        }
+        &:invalid{
+            border-bottom: 2px solid var(--second-color);
+        }
+      }
+      button{
+        flex: 3;
+        border: none;
+        background-color: var(--second-color);
+        font-size: 2.2rem;
+        cursor: pointer;
+        padding: 1rem;
+        color: white;
+        height: 100%;
+      }
+    }
+  }
+}
